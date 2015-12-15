@@ -102,12 +102,14 @@ function iterateOnGroups(groups, $start_container) {
         var fade = fadeChoices[Math.floor(Math.random() * fadeChoices.length)];
         $new_container.addClass(fade);
 
-        // Decide on border style
-        // Nobody wants to look like there parents
-        var parentStyle = $start_container.hasClass('border-dashed');
-        if (!parentStyle) {
-          $new_container.addClass("border-dashed");
-        }
+        // // Decide on border style
+        // // Nobody wants to look like there parents
+        // var parentStyle = $start_container.hasClass('border-dashed');
+        // if (!parentStyle) {
+        //   $new_container.addClass("border-dashed");
+        // }
+
+        $new_container.css('border-color', '#'+(Math.random()*0xFFFFFF<<0).toString(16));
 
         // Create header
         var $header = $("<h1></h1>");
