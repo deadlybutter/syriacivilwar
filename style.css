@@ -1,0 +1,109 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    /*background-color: #111;*/
+    cursor: url("cursor.png"), auto;
+    overflow-x: none;
+}
+
+.border-dashed {
+  display: inline-block;
+  padding: 20px;
+  border: dashed 1px #000 !important;
+
+  border-image: url("border-dashed.png") 1 round !important;
+  margin: 0 20px;
+}
+
+.container {
+    margin: 35px 12px;
+    padding: 2px 8px;
+    display: inline-table;
+    text-align: center;
+    border: 1px solid #FFF;
+}
+
+.container .header {
+    background-color: #FFF;
+    position: relative;
+    top: -18px;
+    margin-top: 4px;
+    z-index: 10;
+    padding: 4px 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Rockwell Extra Bold","Rockwell Bold",monospace
+}
+
+.container_flags {
+    margin-bottom: 8px;
+}
+
+.flag {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.flag:hover {
+    cursor: crosshair;
+}
+
+.flag img {
+    width: 100px;
+    height: 60px;
+}
+
+.modal-controller {
+    display: none;
+}
+
+.modal {
+    color: #FFF;
+    border: 6px outset #FFF;
+    border-radius: 4px;
+    background-color: #111;
+    position: absolute;
+    z-index: 100;
+    width: 600px;
+    top: 15%;
+    top: 15%;
+    left: 50%;
+    margin-left: -300px;
+    cursor: url("cursor.png"), auto;
+}
+
+@media (max-width: 690px) {
+    .modal {
+        max-width: 90%;
+        left: 5%;
+        margin-left: 0;
+    }
+}
+
+.modal-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: crosshair;
+}
+
+.video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -99;
+}
+
+.video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: -100;
+}

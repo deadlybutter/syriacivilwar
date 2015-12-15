@@ -1,0 +1,341 @@
+{
+
+    "groups": [
+        {
+            "name": "Fighting agaisnt IS",
+            "countries": [
+            ],
+            "sub_groups": [
+                {
+                  "name": "Anti-Assad Side",
+                  "countries": [
+                  ],
+                  "sub_groups": [
+                    {
+                      "name": "US Coalition",
+                      "countries": [
+                      ],
+                      "sub_groups": [
+                          {
+                            "name": "NATO",
+                            "countries": [
+                              {
+                                  "letter_code": "USA",
+                                  "name": "United States",
+                                  "contributions_present": ["leadership", "troops", "naval diplomatic support", "air combat", "training", "advisers", "weapons", "aid", "recon"]
+                              },
+                              {
+                                  "letter_code": "FRA",
+                                  "name": "France",
+                                  "contributions_present": ["naval diplomatic support", "air combat"],
+                                  "contributions_past": ["aid", "recon"]
+                              },
+                              {
+                                  "letter_code": "DEU",
+                                  "name": "Germany",
+                                  "contributions_present": ["naval diplomatic support", "air diplomatic support", "aid", "weapons", "training", "recon"]
+                              },
+                              {
+                                  "letter_code": "CAN",
+                                  "name": "Canada",
+                                  "contributions_present": ["training", "aid"],
+                                  "contributions_past": ["air combat"]
+                              },
+                              {
+                                  "letter_code": "GBR",
+                                  "name": "United Kingdom",
+                                  "contributions_present": ["air combat", "aid", "recon", "advisers"]
+                              },
+                              {
+                                  "letter_code": "AUS",
+                                  "name": "Australia",
+                                  "contributions_present": ["air combat", "aid", "advisers"]
+                              },
+                              {
+                                  "letter_code": "ITA",
+                                  "name": "Italy",
+                                  "contributions_past": ["weapons"]
+                              },
+                              {
+                                  "letter_code": "CZE",
+                                  "name": "Italy",
+                                  "contributions_current": ["weapons", "aid"]
+                              },
+                              {
+                                  "letter_code": "NLD",
+                                  "name": "The Netherlands",
+                                  "contributions_current": ["air combat"],
+                                  "contributions_past": ["aid"]
+                              },
+                              {
+                                "letter_code": "DNK",
+                                "name": "Denmark",
+                                "contributions_current": ["air diplomatic support"]
+                              },
+                              {
+                                "letter_code": "BEL",
+                                "name": "Belgium",
+                                "contributions_future": ["troops"]
+                              },
+                              {
+                                "letter_code": "EST",
+                                "name": "Estonia",
+                                "contributions_past": ["aid", "weapons"]
+                              },
+                              {
+                                "letter_code": "TUR",
+                                "name": "Turkey",
+                                "contributions_current": ["aid", "weapons", "air bases", "training", "troops", "air combat"]
+                              },
+                              {
+                                "letter_code": "HUN",
+                                "name": "Hungary",
+                                "contributions_future": ["aid"]
+                              },
+                              {
+                                "letter_code": "ESP",
+                                "name": "Spain",
+                                "contributions_present": ["aid"]
+                              },
+                              {
+                                "letter_code": "SVK",
+                                "name": "Slovakia",
+                                "contributions_past": ["aid"]
+                              },
+                              {
+                                "letter_code": "NOR",
+                                "name": "Norway",
+                                "contributions_past": ["aid"]
+                              },
+                              {
+                                "letter_code": "LUX",
+                                "name": "Luxembourg",
+                                "contributions_future": ["aid"],
+                                "contributions_past": ["aid"]
+                              },
+                              {
+                                "letter_code": "POL",
+                                "name": "Poland",
+                                "contributions_present": ["diplomatic support"]
+                              },
+                              {
+                                "letter_code": "BGR",
+                                "name": "Bulgaria",
+                                "contributions_present": ["diplomatic support"]
+                              },
+                              {
+                                "letter_code": "GRC",
+                                "name": "Greece",
+                                "contributions_past": ["diplomatic support"]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Arab League",
+                            "countries": [
+                              {
+                                "letter_code": "LBN",
+                                "name": "Lebanon",
+                                "contributions_past": ["troops"]
+                              },
+                              {
+                                "letter_code": "JOR",
+                                "name": "Jordan",
+                                "contributions_current": ["aid"],
+                                "contributions_past": ["air combat"]
+                              },
+                              {
+                                "letter_code": "EGY",
+                                "name": "Egypt",
+                                "contributions_past": ["air combat"]
+                              },
+                              {
+                                "letter_code": "IRQ",
+                                "name": "Iraq",
+                                "contributions_current": ["troops", "air bases", "cutting funding sources"]
+                              },
+                              {
+                                "letter_code": "ISR",
+                                "name": "Israel",
+                                "contributions_past": ["diplomatic support"]
+                              },
+                              {
+                                "letter_code": "KWT",
+                                "name": "Kuwait",
+                                "contributions_present": ["air bases", "diplomatic support"],
+                                "contributions_past": ["aid"]
+                              },
+                              {
+                                "letter_code": "OMN",
+                                "name": "Oman",
+                                "contributions_past": ["diplomatic support"]
+                              },
+                              {
+                                "letter_code": "BHR",
+                                "name": "Bahrain",
+                                "contributions_past": ["air combat"]
+                              },
+                              {
+                                "letter_code": "SAU",
+                                "name": "Saudi Arabia",
+                                "contributions_present": ["air combat", "aid"]
+                              },
+                              {
+                                "letter_code": "QAT",
+                                "name": "Qatar",
+                                "contributions_present": ["air diplomatic support"],
+                                "contributions_past": ["aid", "cutting funding sources"]
+                              },
+                              {
+                                "letter_code": "ARE",
+                                "name": "United Arab Emirates",
+                                "contributions_present": ["air combat", "aid"]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Europe",
+                            "countries": [
+                              {
+                                "letter_code": "XK",
+                                "name": "Kosovo",
+                                "contributions_past": ["diplomatic support"]
+                              },
+                              {
+                                "letter_code": "GEO",
+                                "name": "Georgia",
+                                "contributions_present": ["aid"]
+                              },
+                              {
+                                "letter_code": "HRV",
+                                "name": "Croatia",
+                                "contributions_past": ["diplomatic support"]
+                              }
+                            ],
+                            "sub_groups": [
+                              {
+                                "name": "European Union",
+                                "countries": [
+                                  {
+                                    "letter_code": "SWE",
+                                    "name": "Sweeden",
+                                    "contributions_present": ["aid"]
+                                  },
+                                  {
+                                    "letter_code": "CHE",
+                                    "name": "Switzerland",
+                                    "contributions_present": ["aid"]
+                                  },
+                                  {
+                                    "letter_code": "AUT",
+                                    "name": "Austria",
+                                    "contributions_present": ["aid"]
+                                  },
+                                  {
+                                    "letter_code": "IRL",
+                                    "name": "Ireland",
+                                    "contributions_past": ["aid"]
+                                  },
+                                  {
+                                    "letter_code": "FIN",
+                                    "name": "Finland",
+                                    "contributions_past": ["diplomatic support", "aid"]
+                                  },
+                                  {
+                                    "letter_code": "ROU",
+                                    "name": "Romania",
+                                    "contributions_past": ["diplomatic support"]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Asia/Pacific",
+                            "countries": [
+                              {
+                                "letter_code": "JPN",
+                                "name": "Japan",
+                                "contributions_present": ["aid"]
+                              },
+                              {
+                                "letter_code": "NZL",
+                                "name": "New Zealand",
+                                "contributions_present": ["aid"]
+                              },
+                              {
+                                "letter_code": "KOR",
+                                "name": "Republic of Korea",
+                                "contributions_past": ["aid"]
+                              },
+                              {
+                                "letter_code": "SGP",
+                                "name": "Singapore",
+                                "contributions_past": ["diplomatic support"]
+                              },
+                              {
+                                "letter_code": "TWN",
+                                "name": "Taiwan",
+                                "contributions_past": ["diplomatic support"]
+                              }
+                            ]
+                          }
+                      ]
+                },
+                {
+                  "name": "Rebel Groups",
+                  "countries": [
+                    {
+                      "letter_code": "FSA",
+                      "name": "Free Syrian Army",
+                      "contributions_present": ["troops"]
+                    }
+                  ],
+                  "sub_groups": [
+                    {
+                      "_comment": "Should put minor factions here"
+                    }
+                  ]
+                }
+            ]
+          },
+          {
+            "name": "Pro-Assad Side",
+            "countries": [
+              {
+                "letter_code": "RUS",
+                "name": "Russian Federation",
+                "contributions_present": ["air combat", "air bases", "troops"],
+                "contributions_past": ["weapons", "advisers"]
+              }
+            ]
+          },
+          {
+            "name": "Terrorist Groups",
+            "countries": [
+              {
+                "letter_code": "HEZ",
+                "name": "Hezbollah",
+                "contributions_present": ["troops"]
+              }
+            ],
+            "sub_groups": [
+              {
+                "_comment": "Should put minor factions here"
+              }
+            ]
+          }
+        ]
+      },
+      {
+          "name": "Islamic State",
+          "countries": [
+            {
+              "letter_code": "IS",
+              "name": "Islamic State",
+              "contributions_present": ["devil"]
+            }
+          ]
+      }
+    ]
+}
