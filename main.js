@@ -1,8 +1,5 @@
 var _countries = {};
 
-var canvas;
-var ctx;
-
 $(document).on('ready', function() {
     $.ajax({
         type: 'GET',
@@ -17,40 +14,7 @@ $(document).on('ready', function() {
         }
     });
 
-    canvas = document.getElementById("video-overlay");
-    ctx = canvas.getContext('2d');
-    canvas.width = $(window).width();
-    canvas.height = $(window).height();
-    drawVideoOverlay();
-
-    $(window).on('resize', function(){
-      drawVideoOverlay();
-    });
-
 });
-
-
-
-function drawVideoOverlay() {
-  var width = canvas.width;
-  var height = canvas.height;
-  ctx.clearRect(0, 0, width, height);
-
-  var PIXEL_SIZE = width * .03;
-  var totalXPixels = (width / PIXEL_SIZE) + 1;
-  var totalYPixels = (height / PIXEL_SIZE) + 1;
-
-  for (var xIndex = 0; xIndex < totalXPixels; xIndex++) {
-    for (var yIndex = 0; yIndex < totalYPixels; yIndex++) {
-      var opacity = getRandomArbitrary(0.3, 0.5);
-      ctx.fillStyle = "rgba(0, 0, 0," + opacity + " )";
-      ctx.fillRect(xIndex * PIXEL_SIZE, yIndex * PIXEL_SIZE, PIXEL_SIZE, PIXEL_SIZE);
-    }
-  }
-
-  ctx.fillStyle = "rgba(0, 0, 0, 0.6)";
-  ctx.fillRect(0, 0, width, height);
-}
 
 function createBindings() {
 
@@ -64,19 +28,59 @@ function createBindings() {
 
     });
 
-    $(".flag").click(function() {
+    $(".flag, .modal-host-flag").click(function() {
         var letterCode = $(this).attr("country");
         buildCountryModal(_countries[letterCode]);
+    });
+
+    $('.modal-close').click(function() {
+      $('.modal-controller').css('display', 'none');
     });
 }
 
 function buildCountryModal(country) {
   var description = country.name;
+  var useAnd = false;
   if (country.contributions_past != undefined) {
-    // do shit
+    description += (useAnd ? " and" : " has") + " previously contributed ";
+    for (var i = 0; i < country.contributions_past.length; i++) {
+      description += country.contributions_past[i];
+      if (i + 1 != country.contributions_past.length) {
+         description += ', ';
+      }
+    }
+    useAnd = true;
   }
-  // more sht
-  console.log(country);
+
+  if (country.contributions_present != undefined) {
+    description += (useAnd ? " and currently contributes " : " has contributed ");
+    for (var i = 0; i < country.contributions_present.length; i++) {
+      description += country.contributions_present[i];
+      if (i + 1 != country.contributions_present.length) {
+         description += ', ';
+      }
+    }
+    useAnd = true;
+  }
+
+  if (country.contributions_future != undefined) {
+    description += (useAnd ? " and" : " has") + " pledged to contribute ";
+    for (var i = 0; i < country.contributions_future.length; i++) {
+      description += country.contributions_future[i];
+      if (i + 1 != country.contributions_future.length) {
+         description += ', ';
+      }
+    }
+    description += " in the future";
+    useAnd = true;
+  }
+
+  description += ".";
+
+  $('.modal-controller').css('display', 'block');
+  $('.modal-host-flag').attr('country', country.letterCode);
+  $('.modal-host-flag').attr('src', 'flags/' + country.letter_code + '.png');
+  $('.modal-description').text(description);
 }
 
 function iterateOnGroups(groups, $start_container) {

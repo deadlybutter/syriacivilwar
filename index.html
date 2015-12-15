@@ -10,18 +10,23 @@
 
     <body>
 
-        <canvas id="video-overlay" class="video-overlay"></canvas>
+        <div class="map"></div>
 
-        <div class="modal-shadow modal-controller">
+        <div class="modal-controller">
             <div class="modal">
                 <div class="modal-wrapper">
-                    <img id="USA" class="modal-host-flag" src="flags/USA.png">
+                    <img country="USA" class="modal-host-flag" src="flags/USA.png">
                     <p class="modal-description"></p>
-                    <!-- Interesting politics at play -->
-                    <!-- Contribute -->
-                    <!-- Close -->
+                    <!-- TODO: Interesting politics at play -->
+                    <button class="modal-close">CLOSE</button>
                 </div>
             </div>
+        </div>
+
+        <div class="intro animated fadeInUpBig">
+          <h1>This visualization illustrates all of the nations involved in the current Iraq-Syria conflict and where they reside geo-politically.</h1>
+          <p>The world moves fast and I'll probably miss something, so if you see something outdated shoot me an <a href="mailto:me@joe-kent.ccom">email</a> or make a <a target="_blank" href="https://github.com/deadlybutter/syriacivilwar"> pull request on Github</a>.</p>
+          <p>Web servers and time updating this isn't cheap! Consider supporting <a target="_blank" href="https://cash.me/$joekent">$joekent</a> or following me on <a target="_blank" href="https://twitter.com/thedeadlybutter">Twitter</a>.</p>
         </div>
 
         <script src="jquery-2.1.4.min.js"></script>

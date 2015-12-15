@@ -1,9 +1,29 @@
 html, body {
     padding: 0;
     margin: 0;
-    /*background-color: #111;*/
+    font-family: "Rockwell Extra Bold","Rockwell Bold", monospace;
     cursor: url("cursor.png"), auto;
     overflow-x: none;
+}
+
+.intro {
+  color: #FFF;
+  padding: 16px;
+  text-shadow: #111 2px 2px;
+}
+
+.intro h1 {
+  font-size: 24px;
+  line-height: 20px;
+}
+
+.intro p {
+  margin-top: 8px;
+}
+
+.intro a {
+  color: #FFF;
+  cursor: crosshair;
 }
 
 .border-dashed {
@@ -33,7 +53,6 @@ html, body {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-    font-family: "Rockwell Extra Bold","Rockwell Bold",monospace
 }
 
 .container_flags {
@@ -60,50 +79,39 @@ html, body {
 
 .modal {
     color: #FFF;
-    border: 6px outset #FFF;
+    border: 4px outset #FFF;
     border-radius: 4px;
-    background-color: #111;
-    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);;
+    position: fixed;
     z-index: 100;
-    width: 600px;
-    top: 15%;
-    top: 15%;
-    left: 50%;
-    margin-left: -300px;
+    width: 300px;
+    top: 32px;
+    left: 32px;
     cursor: url("cursor.png"), auto;
+    text-align: center;
 }
 
-@media (max-width: 690px) {
-    .modal {
-        max-width: 90%;
-        left: 5%;
-        margin-left: 0;
-    }
+.modal img {
+  padding-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 60px;
 }
 
-.modal-shadow {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 99;
-    background-color: rgba(0, 0, 0, 0.7);
-    cursor: crosshair;
+.modal-close {
+  border-radius: 2px;
+  margin: 2px;
+  font-size: 12px;
 }
 
-.video-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -99;
-}
-
-.video {
+.map {
   position: fixed;
   top: 0;
   left: 0;
   width: 100% !important;
   height: 100% !important;
   z-index: -100;
+  background-image: url('syria_map.png');
+  background-size: cover;
 }

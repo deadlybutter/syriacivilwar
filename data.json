@@ -22,18 +22,18 @@
                               {
                                   "letter_code": "USA",
                                   "name": "United States",
-                                  "contributions_present": ["leadership", "troops", "naval diplomatic support", "air combat", "training", "advisers", "weapons", "aid", "recon"]
+                                  "contributions_present": ["leadership", "troops", "naval support", "air combat", "training", "advisers", "weapons", "aid", "recon"]
                               },
                               {
                                   "letter_code": "FRA",
                                   "name": "France",
-                                  "contributions_present": ["naval diplomatic support", "air combat"],
+                                  "contributions_present": ["naval support", "air combat"],
                                   "contributions_past": ["aid", "recon"]
                               },
                               {
                                   "letter_code": "DEU",
                                   "name": "Germany",
-                                  "contributions_present": ["naval diplomatic support", "air diplomatic support", "aid", "weapons", "training", "recon"]
+                                  "contributions_present": ["naval support", "air support", "aid", "weapons", "training", "recon"]
                               },
                               {
                                   "letter_code": "CAN",
@@ -59,18 +59,18 @@
                               {
                                   "letter_code": "CZE",
                                   "name": "Italy",
-                                  "contributions_current": ["weapons", "aid"]
+                                  "contributions_present": ["weapons", "aid"]
                               },
                               {
                                   "letter_code": "NLD",
                                   "name": "The Netherlands",
-                                  "contributions_current": ["air combat"],
+                                  "contributions_present": ["air combat"],
                                   "contributions_past": ["aid"]
                               },
                               {
                                 "letter_code": "DNK",
                                 "name": "Denmark",
-                                "contributions_current": ["air diplomatic support"]
+                                "contributions_present": ["air support"]
                               },
                               {
                                 "letter_code": "BEL",
@@ -85,7 +85,7 @@
                               {
                                 "letter_code": "TUR",
                                 "name": "Turkey",
-                                "contributions_current": ["aid", "weapons", "air bases", "training", "troops", "air combat"]
+                                "contributions_present": ["aid", "weapons", "air bases", "training", "troops", "air combat"]
                               },
                               {
                                 "letter_code": "HUN",
@@ -141,7 +141,7 @@
                               {
                                 "letter_code": "JOR",
                                 "name": "Jordan",
-                                "contributions_current": ["aid"],
+                                "contributions_present": ["aid"],
                                 "contributions_past": ["air combat"]
                               },
                               {
@@ -152,7 +152,7 @@
                               {
                                 "letter_code": "IRQ",
                                 "name": "Iraq",
-                                "contributions_current": ["troops", "air bases", "cutting funding sources"]
+                                "contributions_present": ["troops", "air bases", "cutting funding sources"]
                               },
                               {
                                 "letter_code": "ISR",
@@ -183,7 +183,7 @@
                               {
                                 "letter_code": "QAT",
                                 "name": "Qatar",
-                                "contributions_present": ["air diplomatic support"],
+                                "contributions_present": ["air support"],
                                 "contributions_past": ["aid", "cutting funding sources"]
                               },
                               {
@@ -333,7 +333,7 @@
             {
               "letter_code": "IS",
               "name": "Islamic State",
-              "contributions_present": ["devil"]
+              "contributions_present": ["by making everyone in the world angry at them"]
             }
           ]
       }
