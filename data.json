@@ -116,17 +116,17 @@
                               {
                                 "letter_code": "POL",
                                 "name": "Poland",
-                                "contributions_present": ["diplomatic support"]
+                                "contributions_present": ["diplomatic support to the coalition"]
                               },
                               {
                                 "letter_code": "BGR",
                                 "name": "Bulgaria",
-                                "contributions_present": ["diplomatic support"]
+                                "contributions_present": ["diplomatic support to the coalition"]
                               },
                               {
                                 "letter_code": "GRC",
                                 "name": "Greece",
-                                "contributions_past": ["diplomatic support"]
+                                "contributions_past": ["diplomatic support to the coalition"]
                               }
                             ]
                           },
@@ -157,18 +157,18 @@
                               {
                                 "letter_code": "ISR",
                                 "name": "Israel",
-                                "contributions_past": ["diplomatic support"]
+                                "contributions_past": ["diplomatic support to the coalition"]
                               },
                               {
                                 "letter_code": "KWT",
                                 "name": "Kuwait",
-                                "contributions_present": ["air bases", "diplomatic support"],
+                                "contributions_present": ["air bases", "diplomatic support to the coalition"],
                                 "contributions_past": ["aid"]
                               },
                               {
                                 "letter_code": "OMN",
                                 "name": "Oman",
-                                "contributions_past": ["diplomatic support"]
+                                "contributions_past": ["diplomatic support to the coalition"]
                               },
                               {
                                 "letter_code": "BHR",
@@ -199,7 +199,7 @@
                               {
                                 "letter_code": "XK",
                                 "name": "Kosovo",
-                                "contributions_past": ["diplomatic support"]
+                                "contributions_past": ["diplomatic support to the coalition"]
                               },
                               {
                                 "letter_code": "GEO",
@@ -209,7 +209,7 @@
                               {
                                 "letter_code": "HRV",
                                 "name": "Croatia",
-                                "contributions_past": ["diplomatic support"]
+                                "contributions_past": ["diplomatic support to the coalition"]
                               }
                             ],
                             "sub_groups": [
@@ -239,12 +239,12 @@
                                   {
                                     "letter_code": "FIN",
                                     "name": "Finland",
-                                    "contributions_past": ["diplomatic support", "aid"]
+                                    "contributions_past": ["diplomatic support to the coalition", "aid"]
                                   },
                                   {
                                     "letter_code": "ROU",
                                     "name": "Romania",
-                                    "contributions_past": ["diplomatic support"]
+                                    "contributions_past": ["diplomatic support to the coalition"]
                                   }
                                 ]
                               }
@@ -271,12 +271,12 @@
                               {
                                 "letter_code": "SGP",
                                 "name": "Singapore",
-                                "contributions_past": ["diplomatic support"]
+                                "contributions_past": ["diplomatic support to the coalition"]
                               },
                               {
                                 "letter_code": "TWN",
                                 "name": "Taiwan",
-                                "contributions_past": ["diplomatic support"]
+                                "contributions_past": ["diplomatic support to the coalition"]
                               }
                             ]
                           }
