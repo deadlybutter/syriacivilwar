@@ -12,6 +12,11 @@ html, body {
   text-shadow: #111 2px 2px;
 }
 
+.intro h1, p {
+  background-color: #111;
+  padding: 4px;
+}
+
 .intro h1 {
   font-size: 24px;
   line-height: 20px;
@@ -24,15 +29,6 @@ html, body {
 .intro a {
   color: #FFF;
   cursor: crosshair;
-}
-
-.border-dashed {
-  display: inline-block;
-  padding: 20px;
-  border: dashed 1px #000 !important;
-
-  border-image: url("border-dashed.png") 1 round !important;
-  margin: 0 20px;
 }
 
 .container {

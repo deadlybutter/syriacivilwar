@@ -3,21 +3,25 @@
     "groups": [
         {
             "name": "Fighting against IS",
+            "color": "0074D9",
             "countries": [
             ],
             "sub_groups": [
                 {
                   "name": "Anti-Assad Side",
+                  "color": "FFDC00",
                   "countries": [
                   ],
                   "sub_groups": [
                     {
                       "name": "US Coalition",
+                      "color": "39CCCC",
                       "countries": [
                       ],
                       "sub_groups": [
                           {
                             "name": "NATO",
+                            "color": "2ECC40",
                             "countries": [
                               {
                                   "letter_code": "USA",
@@ -132,6 +136,7 @@
                           },
                           {
                             "name": "Arab League",
+                            "color": "FF851B",
                             "countries": [
                               {
                                 "letter_code": "LBN",
@@ -195,6 +200,7 @@
                           },
                           {
                             "name": "Europe",
+                            "color": "F012BE",
                             "countries": [
                               {
                                 "letter_code": "XK",
@@ -215,6 +221,7 @@
                             "sub_groups": [
                               {
                                 "name": "European Union",
+                                "color": "7FDBFF",
                                 "countries": [
                                   {
                                     "letter_code": "SWE",
@@ -252,6 +259,7 @@
                           },
                           {
                             "name": "Asia/Pacific",
+                            "color": "DDDDDD",
                             "countries": [
                               {
                                 "letter_code": "JPN",
@@ -284,6 +292,7 @@
                 },
                 {
                   "name": "Rebel Groups",
+                  "color": "FFDC00",
                   "countries": [
                     {
                       "letter_code": "FSA",
@@ -301,6 +310,7 @@
           },
           {
             "name": "Pro-Assad Side",
+            "color": "B10DC9",
             "countries": [
               {
                 "letter_code": "RUS",
@@ -312,6 +322,7 @@
           },
           {
             "name": "Terrorist Groups",
+            "color": "FF851B",
             "countries": [
               {
                 "letter_code": "HEZ",
@@ -329,6 +340,7 @@
       },
       {
           "name": "Islamic State",
+          "color": "FF4136",
           "countries": [
             {
               "letter_code": "IS",
