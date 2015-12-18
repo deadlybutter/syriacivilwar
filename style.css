@@ -95,11 +95,31 @@ html, body {
   height: 60px;
 }
 
+.modal img:hover {
+  cursor: crosshair;
+}
+
 .modal-close {
   border-radius: 2px;
   margin: 2px;
   font-size: 12px;
   cursor: crosshair;
+}
+
+.modal-geo-politics {
+  margin-top: 16px;
+  margin-top: 8px;
+}
+
+.modal-geo-politics h1 {
+  font-size: 20px;
+}
+
+.modal-geo-politics_container {
+  border: 1px solid #FFF;
+  width: 45%;
+  margin: 16px auto;
+  display: inline-block;
 }
 
 .map {

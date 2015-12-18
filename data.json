@@ -349,5 +349,15 @@
             }
           ]
       }
+    ],
+    "geo_politics": [
+      {
+        "country": ["RUS", "USA"],
+        "reason": "Putin is a troll"
+      },
+      {
+        "country": ["RUS", "TUR"],
+        "reason": "HEY THATS MY LAND"
+      }
     ]
 }

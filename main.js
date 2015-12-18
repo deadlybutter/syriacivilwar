@@ -1,4 +1,5 @@
 var _countries = {};
+var _politics = {};
 
 $(document).on('ready', function() {
     $.ajax({
@@ -7,6 +8,7 @@ $(document).on('ready', function() {
         dataType: "json",
         success: function (data) {
           iterateOnGroups(data.groups, $('body'));
+          iterateOnPolitics(data.geo_politics);
         },
         error: function(err) {
           console.log("!--- Error ---!");
@@ -81,6 +83,23 @@ function buildCountryModal(country) {
   $('.modal-host-flag').attr('country', country.letterCode);
   $('.modal-host-flag').attr('src', 'flags/' + country.letter_code + '.png');
   $('.modal-description').text(description);
+
+  // Geo Politics
+  $('.modal-geo-politics').empty();
+  if (_politics[country.letter_code] == undefined) {
+    return;
+  }
+
+  $('.modal-geo-politics').append("<h1>Geo-Politics</h1>");
+  for (var key in _politics[country.letter_code]) {
+    var object = _politics[country.letter_code][key];
+    var $politicContainer = $('<div class="modal-geo-politics_container"></div>');
+    $politicContainer.append('<img country="' + key + '" class="modal-host-flag" src="flags/' + key + '.png">')
+    $politicContainer.append('<p>' + object + '</p>');
+    $('.modal-geo-politics').append($politicContainer);
+  }
+
+  createBindings();
 }
 
 function iterateOnGroups(groups, $start_container) {
@@ -189,6 +208,27 @@ function iterateOnCountries(countries, $container) {
     // Append the flag container to the group container
     $container.append($flag_container);
     return totalCountries;
+}
+
+function iterateOnPolitics(politics) {
+  politics.forEach(function(element, index, array) {
+    element.country.forEach(function(country, cIndex, array) {
+      if (_politics[country] == undefined) {
+        _politics[country] = {};
+      }
+
+      var otherCountries = element.country.slice();
+      otherCountries.splice(cIndex, 1);
+      otherCountries.forEach(function(otherCountry, index, array) {
+        if (_politics[country][otherCountry] == undefined) {
+          _politics[country][otherCountry] = "";
+        }
+        _politics[country][otherCountry] += " " + element.reason;
+      });
+    });
+  });
+
+  console.log(_politics);
 }
 
 function getRandomArbitrary(min, max) {
