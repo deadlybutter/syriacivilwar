@@ -353,11 +353,19 @@
     "geo_politics": [
       {
         "country": ["RUS", "USA"],
-        "reason": "Putin is a troll"
+        "reason": "Russian and US tensions right now are often compared to the cold war. They also have post assad disagreements and Russia has been caught attacking US backed rebels."
       },
       {
         "country": ["RUS", "TUR"],
-        "reason": "HEY THATS MY LAND"
+        "reason": "Turkey and Russia are having several disputes. One being Turkey shooting down a Russian jet that allegedly flew over there airspace"
+      },
+      {
+        "country": ["RUS", "FRA", "USA"],
+        "reason": "After the Paris attacks, French President Hollande asked Russia and the US to join forces agianst IS."
+      },
+      {
+        "country": ["DEU", "FRA"],
+        "reason": "Germany is sending a frigate to work alongside the French aircraft carrier Charles de Gaulle"
       }
     ]
 }

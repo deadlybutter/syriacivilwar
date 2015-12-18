@@ -80,7 +80,7 @@ function buildCountryModal(country) {
   description += ".";
 
   $('.modal-controller').css('display', 'block');
-  $('.modal-host-flag').attr('country', country.letterCode);
+  $('.modal-host-flag').attr('country', country.letter_code);
   $('.modal-host-flag').attr('src', 'flags/' + country.letter_code + '.png');
   $('.modal-description').text(description);
 

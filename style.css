@@ -85,6 +85,8 @@ html, body {
     left: 32px;
     cursor: url("cursor.png"), auto;
     text-align: center;
+    max-height: 90%;
+    overflow-y: scroll;
 }
 
 .modal img {
@@ -120,6 +122,9 @@ html, body {
   width: 45%;
   margin: 16px auto;
   display: inline-block;
+  max-height: 379px;
+  overflow-y: scroll;
+  vertical-align:top;
 }
 
 .map {
